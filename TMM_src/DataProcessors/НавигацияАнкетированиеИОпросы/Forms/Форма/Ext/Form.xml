@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="1">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Button name="СоздатьНовуюАнкету" id="5">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.СоздатьНовуюАнкету</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать
+новую
+анкету</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СоздатьНовуюАнкетуРасширеннаяПодсказка" id="6"/>
+				</Button>
+				<Button name="СоздатьНовыйОпрос" id="7">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.СоздатьНовыйОпрос</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать
+новый
+опрос</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СоздатьНовыйОпросРасширеннаяПодсказка" id="8"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="3">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<Button name="ПосмотретьПроведеннныеАнкетыОпросы" id="9">
+					<Type>UsualButton</Type>
+					<Width>16</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ПосмотретьПроведеннныеАнкетыОпросы</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проведение
+анкетирования
+и опросов</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПосмотретьПроведеннныеАнкетыОпросыРасширеннаяПодсказка" id="10"/>
+				</Button>
+				<Button name="ОтчётыПоРезультатамПроведенияАнкетИОпросо" id="11">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОтчётыПоРезультатамПроведенияАнкетИОпросо</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчёты по результатам
+проведения опросов
+и заполнения анкет</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтчётыПоРезультатамПроведенияАнкетИОпросоРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НавигацияАнкетированиеИОпросы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьНовуюАнкету" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую анкету</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую анкету</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовуюАнкету</Action>
+		</Command>
+		<Command name="СоздатьНовыйОпрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый опрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новый опрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНовыйОпрос</Action>
+		</Command>
+		<Command name="ПосмотретьПроведеннныеАнкетыОпросы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведение анкетирования и опросов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Посмотреть проведеннные анкеты опросы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПосмотретьПроведеннныеАнкетыОпросы</Action>
+		</Command>
+		<Command name="ОтчётыПоРезультатамПроведенияАнкетИОпросо" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по результатам опросов и заполнения анкет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по результатам проведения анкет и опросо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчётыПоРезультатамПроведенияАнкетИОпросо</Action>
+		</Command>
+	</Commands>
+</Form>

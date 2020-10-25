@@ -1,0 +1,1136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПроложитьМаршрут" id="161">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроложитьМаршрут</CommandName>
+				<ExtendedTooltip name="ФормаПроложитьМаршрутРасширеннаяПодсказка" id="162"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Клиент" id="7">
+			<DataPath>Объект.Клиент</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлиентКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">КлиентПриИзменении</Event>
+				<Event name="Opening">КлиентОткрытие</Event>
+			</Events>
+		</InputField>
+		<Pages name="СтраницыАдресНазначения" id="117">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы адрес назначения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы адрес назначения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СтраницыАдресНазначенияРасширеннаяПодсказка" id="118"/>
+			<ChildItems>
+				<Page name="СтраницаАдрес" id="119">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница адрес</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаАдресРасширеннаяПодсказка" id="120"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация1" id="128">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Здесь вы можете ввести данные о местоположении клиента вручную</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="129"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="130"/>
+						</LabelDecoration>
+						<Button name="ВыбратьИзДоступныхАдресовКлиента" id="163">
+							<Type>UsualButton</Type>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<CommandName>Form.Command.ВыбратьИзДоступныхАдресовКлиента</CommandName>
+							<ExtendedTooltip name="ВыбратьИзДоступныхАдресовКлиентаРасширеннаяПодсказка" id="164"/>
+						</Button>
+						<Pages name="СтраницыАдресИВыборАдреса" id="165">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы адрес и выбор адреса</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы адрес и выбор адреса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>None</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыАдресИВыборАдресаРасширеннаяПодсказка" id="166"/>
+							<ChildItems>
+								<Page name="АдресВыбранный" id="167">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адрес выбранный</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адрес выбранный</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="АдресВыбранныйРасширеннаяПодсказка" id="168"/>
+									<ChildItems>
+										<InputField name="Регион" id="13">
+											<DataPath>Объект.Регион</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РегионКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="РегионРасширеннаяПодсказка" id="15"/>
+										</InputField>
+										<InputField name="Район" id="16">
+											<DataPath>Объект.Район</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="РайонКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="РайонРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<InputField name="НаселенныйПункт" id="19">
+											<DataPath>Объект.НаселенныйПункт</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаселенныйПунктКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="НаселенныйПунктРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<InputField name="Улица" id="22">
+											<DataPath>Объект.Улица</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="УлицаКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="УлицаРасширеннаяПодсказка" id="24"/>
+										</InputField>
+										<InputField name="Дом" id="25">
+											<DataPath>Объект.Дом</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДомКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="27"/>
+										</InputField>
+										<InputField name="Индекс" id="28">
+											<DataPath>Объект.Индекс</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧГ=0</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ИндексКонтекстноеМеню" id="29"/>
+											<ExtendedTooltip name="ИндексРасширеннаяПодсказка" id="30"/>
+										</InputField>
+										<InputField name="Широта" id="31">
+											<DataPath>Объект.Широта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ШиротаКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="ШиротаРасширеннаяПодсказка" id="33"/>
+										</InputField>
+										<InputField name="Долгота" id="34">
+											<DataPath>Объект.Долгота</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДолготаКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="ДолготаРасширеннаяПодсказка" id="36"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ВыборАдресаИзТаблицы" id="169">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор адреса из таблицы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбор адреса из таблицы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ВыборАдресаИзТаблицыРасширеннаяПодсказка" id="170"/>
+									<ChildItems>
+										<Table name="АдресаДоставкиКлиент" id="171">
+											<Representation>List</Representation>
+											<ChangeRowSet>false</ChangeRowSet>
+											<ChangeRowOrder>false</ChangeRowOrder>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>АдресаДоставкиКлиент</DataPath>
+											<CommandSet>
+												<ExcludedCommand>Add</ExcludedCommand>
+												<ExcludedCommand>CancelSearch</ExcludedCommand>
+												<ExcludedCommand>Change</ExcludedCommand>
+												<ExcludedCommand>Copy</ExcludedCommand>
+												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+												<ExcludedCommand>Delete</ExcludedCommand>
+												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Find</ExcludedCommand>
+												<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>OutputList</ExcludedCommand>
+												<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+												<ExcludedCommand>SearchHistory</ExcludedCommand>
+												<ExcludedCommand>SelectAll</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
+											</CommandSet>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="АдресаДоставкиКлиентКонтекстноеМеню" id="172"/>
+											<AutoCommandBar name="АдресаДоставкиКлиентКоманднаяПанель" id="173"/>
+											<ExtendedTooltip name="АдресаДоставкиКлиентРасширеннаяПодсказка" id="174"/>
+											<SearchStringAddition name="АдресаДоставкиКлиентСтрокаПоиска" id="175">
+												<AdditionSource>
+													<Item>АдресаДоставкиКлиент</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АдресаДоставкиКлиентСтрокаПоискаКонтекстноеМеню" id="176"/>
+												<ExtendedTooltip name="АдресаДоставкиКлиентСтрокаПоискаРасширеннаяПодсказка" id="177"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="АдресаДоставкиКлиентСостояниеПросмотра" id="178">
+												<AdditionSource>
+													<Item>АдресаДоставкиКлиент</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="АдресаДоставкиКлиентСостояниеПросмотраКонтекстноеМеню" id="179"/>
+												<ExtendedTooltip name="АдресаДоставкиКлиентСостояниеПросмотраРасширеннаяПодсказка" id="180"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="АдресаДоставкиКлиентУправлениеПоиском" id="181">
+												<AdditionSource>
+													<Item>АдресаДоставкиКлиент</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="АдресаДоставкиКлиентУправлениеПоискомКонтекстноеМеню" id="182"/>
+												<ExtendedTooltip name="АдресаДоставкиКлиентУправлениеПоискомРасширеннаяПодсказка" id="183"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">АдресаДоставкиКлиентВыбор</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="АдресаДоставкиКлиентАдресДоставки" id="184">
+													<DataPath>АдресаДоставкиКлиент.АдресДоставки</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентАдресДоставкиКонтекстноеМеню" id="185"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентАдресДоставкиРасширеннаяПодсказка" id="186"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентРегион" id="187">
+													<DataPath>АдресаДоставкиКлиент.Регион</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентРегионКонтекстноеМеню" id="188"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентРегионРасширеннаяПодсказка" id="189"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентРайон" id="190">
+													<DataPath>АдресаДоставкиКлиент.Район</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентРайонКонтекстноеМеню" id="191"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентРайонРасширеннаяПодсказка" id="192"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентНаселенныйПункт" id="193">
+													<DataPath>АдресаДоставкиКлиент.НаселенныйПункт</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентНаселенныйПунктКонтекстноеМеню" id="194"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентНаселенныйПунктРасширеннаяПодсказка" id="195"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентУлица" id="196">
+													<DataPath>АдресаДоставкиКлиент.Улица</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентУлицаКонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентУлицаРасширеннаяПодсказка" id="198"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентДом" id="199">
+													<DataPath>АдресаДоставкиКлиент.Дом</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентДомКонтекстноеМеню" id="200"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентДомРасширеннаяПодсказка" id="201"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентИндекс" id="202">
+													<DataPath>АдресаДоставкиКлиент.Индекс</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентИндексКонтекстноеМеню" id="203"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентИндексРасширеннаяПодсказка" id="204"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентШирота" id="205">
+													<DataPath>АдресаДоставкиКлиент.Широта</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентШиротаКонтекстноеМеню" id="206"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентШиротаРасширеннаяПодсказка" id="207"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентАдресныйОбъект" id="208">
+													<DataPath>АдресаДоставкиКлиент.АдресныйОбъект</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентАдресныйОбъектКонтекстноеМеню" id="209"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентАдресныйОбъектРасширеннаяПодсказка" id="210"/>
+												</InputField>
+												<InputField name="АдресаДоставкиКлиентДолгота" id="211">
+													<DataPath>АдресаДоставкиКлиент.Долгота</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="АдресаДоставкиКлиентДолготаКонтекстноеМеню" id="212"/>
+													<ExtendedTooltip name="АдресаДоставкиКлиентДолготаРасширеннаяПодсказка" id="213"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<UsualGroup name="Дополнительно" id="142">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ДополнительноРасширеннаяПодсказка" id="143"/>
+							<ChildItems>
+								<InputField name="Дата" id="131">
+									<DataPath>Объект.Дата</DataPath>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="132"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="133"/>
+								</InputField>
+								<UsualGroup name="Группа1" id="126">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="127"/>
+									<ChildItems>
+										<InputField name="Наименование" id="4">
+											<DataPath>Объект.Description</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+										</InputField>
+										<InputField name="Код" id="1">
+											<DataPath>Объект.Code</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+											<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаКарта" id="121">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карта</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница карта</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаКартаРасширеннаяПодсказка" id="122"/>
+					<ChildItems>
+						<InputField name="АдресДоставки" id="10">
+							<DataPath>АдресВрем</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="АдресДоставкиКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="АдресДоставкиРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">АдресДоставкиПриИзменении</Event>
+								<Event name="StartChoice">АдресДоставкиНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<HTMLDocumentField name="ТекстHTML" id="123">
+							<DataPath>ТекстHTML</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Height>7</Height>
+							<ContextMenu name="ТекстHTMLКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ТекстHTMLРасширеннаяПодсказка" id="125"/>
+							<Events>
+								<Event name="DocumentComplete">ТекстHTMLДокументСформирован</Event>
+							</Events>
+						</HTMLDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="136">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="137"/>
+				</Page>
+				<Page name="СтраницаДетали" id="138">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Детали</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница детали</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДеталиРасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<Table name="КоординатыПеремещения" id="41">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.КоординатыПеремещения</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КоординатыПеремещенияКонтекстноеМеню" id="42"/>
+							<AutoCommandBar name="КоординатыПеремещенияКоманднаяПанель" id="43">
+								<ChildItems>
+									<Button name="ПоказатьШиротуИДолготу" id="144">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПоказатьШиротуИДолготу</CommandName>
+										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ПоказатьШиротуИДолготуРасширеннаяПодсказка" id="145"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КоординатыПеремещенияРасширеннаяПодсказка" id="44"/>
+							<SearchStringAddition name="КоординатыПеремещенияСтрокаПоиска" id="45">
+								<AdditionSource>
+									<Item>КоординатыПеремещения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КоординатыПеремещенияСтрокаПоискаКонтекстноеМеню" id="46"/>
+								<ExtendedTooltip name="КоординатыПеремещенияСтрокаПоискаРасширеннаяПодсказка" id="47"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КоординатыПеремещенияСостояниеПросмотра" id="48">
+								<AdditionSource>
+									<Item>КоординатыПеремещения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КоординатыПеремещенияСостояниеПросмотраКонтекстноеМеню" id="49"/>
+								<ExtendedTooltip name="КоординатыПеремещенияСостояниеПросмотраРасширеннаяПодсказка" id="50"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КоординатыПеремещенияУправлениеПоиском" id="51">
+								<AdditionSource>
+									<Item>КоординатыПеремещения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КоординатыПеремещенияУправлениеПоискомКонтекстноеМеню" id="52"/>
+								<ExtendedTooltip name="КоординатыПеремещенияУправлениеПоискомРасширеннаяПодсказка" id="53"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">КоординатыПеремещенияПриАктивизацииСтроки</Event>
+								<Event name="OnChange">КоординатыПеремещенияПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="КоординатыПеремещенияНомерСтроки" id="54">
+									<DataPath>Объект.КоординатыПеремещения.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияНомерСтрокиКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="КоординатыПеремещенияНомерСтрокиРасширеннаяПодсказка" id="56"/>
+								</LabelField>
+								<InputField name="КоординатыПеремещенияАдрес" id="158">
+									<DataPath>Объект.КоординатыПеремещения.Адрес</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Адрес / название точки</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияАдресКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="КоординатыПеремещенияАдресРасширеннаяПодсказка" id="160"/>
+								</InputField>
+								<InputField name="КоординатыПеремещенияДатаВремя" id="57">
+									<DataPath>Объект.КоординатыПеремещения.ДатаВремя</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияДатаВремяКонтекстноеМеню" id="58"/>
+									<ExtendedTooltip name="КоординатыПеремещенияДатаВремяРасширеннаяПодсказка" id="59"/>
+								</InputField>
+								<InputField name="КоординатыПеремещенияШирота" id="60">
+									<DataPath>Объект.КоординатыПеремещения.Широта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияШиротаКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="КоординатыПеремещенияШиротаРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<InputField name="КоординатыПеремещенияДолгота" id="63">
+									<DataPath>Объект.КоординатыПеремещения.Долгота</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияДолготаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="КоординатыПеремещенияДолготаРасширеннаяПодсказка" id="65"/>
+								</InputField>
+								<InputField name="КоординатыПеремещенияИдентификатор" id="66">
+									<DataPath>Объект.КоординатыПеремещения.Идентификатор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КоординатыПеремещенияИдентификаторКонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="КоординатыПеремещенияИдентификаторРасширеннаяПодсказка" id="68"/>
+								</InputField>
+								<CheckBoxField name="КоординатыПеремещенияМаркерУдалён" id="214">
+									<DataPath>Объект.КоординатыПеремещения.МаркерУдалён</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КоординатыПеремещенияМаркерУдалёнКонтекстноеМеню" id="215"/>
+									<ExtendedTooltip name="КоординатыПеремещенияМаркерУдалёнРасширеннаяПодсказка" id="216"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+						<Pages name="Группа2" id="152">
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="153"/>
+							<ChildItems>
+								<Page name="Группа3" id="154">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Медиаматериалы</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="155"/>
+									<ChildItems>
+										<Table name="Медиаматериалы" id="71">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.Медиаматериалы</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="МедиаматериалыКонтекстноеМеню" id="72"/>
+											<AutoCommandBar name="МедиаматериалыКоманднаяПанель" id="73"/>
+											<ExtendedTooltip name="МедиаматериалыРасширеннаяПодсказка" id="74"/>
+											<SearchStringAddition name="МедиаматериалыСтрокаПоиска" id="75">
+												<AdditionSource>
+													<Item>Медиаматериалы</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МедиаматериалыСтрокаПоискаКонтекстноеМеню" id="76"/>
+												<ExtendedTooltip name="МедиаматериалыСтрокаПоискаРасширеннаяПодсказка" id="77"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="МедиаматериалыСостояниеПросмотра" id="78">
+												<AdditionSource>
+													<Item>Медиаматериалы</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="МедиаматериалыСостояниеПросмотраКонтекстноеМеню" id="79"/>
+												<ExtendedTooltip name="МедиаматериалыСостояниеПросмотраРасширеннаяПодсказка" id="80"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="МедиаматериалыУправлениеПоиском" id="81">
+												<AdditionSource>
+													<Item>Медиаматериалы</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="МедиаматериалыУправлениеПоискомКонтекстноеМеню" id="82"/>
+												<ExtendedTooltip name="МедиаматериалыУправлениеПоискомРасширеннаяПодсказка" id="83"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="Selection">МедиаматериалыВыбор</Event>
+												<Event name="BeforeAddRow">МедиаматериалыПередНачаломДобавления</Event>
+											</Events>
+											<ChildItems>
+												<LabelField name="МедиаматериалыНомерСтроки" id="84">
+													<DataPath>Объект.Медиаматериалы.LineNumber</DataPath>
+													<Visible>false</Visible>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МедиаматериалыНомерСтрокиКонтекстноеМеню" id="85"/>
+													<ExtendedTooltip name="МедиаматериалыНомерСтрокиРасширеннаяПодсказка" id="86"/>
+												</LabelField>
+												<PictureField name="МедиаматериалыКартинкаСтроки" id="146">
+													<DataPath>Объект.Медиаматериалы.КартинкаСтроки</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МедиаматериалыКартинкаСтрокиКонтекстноеМеню" id="147"/>
+													<ExtendedTooltip name="МедиаматериалыКартинкаСтрокиРасширеннаяПодсказка" id="148"/>
+												</PictureField>
+												<InputField name="МедиаматериалыНазвание" id="149">
+													<DataPath>Объект.Медиаматериалы.Название</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МедиаматериалыНазваниеКонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="МедиаматериалыНазваниеРасширеннаяПодсказка" id="151"/>
+												</InputField>
+												<InputField name="МедиаматериалыИдентификатор" id="87">
+													<DataPath>Объект.Медиаматериалы.Идентификатор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="МедиаматериалыИдентификаторКонтекстноеМеню" id="88"/>
+													<ExtendedTooltip name="МедиаматериалыИдентификаторРасширеннаяПодсказка" id="89"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+								<Page name="Группа4" id="156">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Комментарии</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="157"/>
+									<ChildItems>
+										<Table name="КомментарииИЗаметки" id="95">
+											<Representation>List</Representation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.КомментарииИЗаметки</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="КомментарииИЗаметкиКонтекстноеМеню" id="96"/>
+											<AutoCommandBar name="КомментарииИЗаметкиКоманднаяПанель" id="97"/>
+											<ExtendedTooltip name="КомментарииИЗаметкиРасширеннаяПодсказка" id="98"/>
+											<SearchStringAddition name="КомментарииИЗаметкиСтрокаПоиска" id="99">
+												<AdditionSource>
+													<Item>КомментарииИЗаметки</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КомментарииИЗаметкиСтрокаПоискаКонтекстноеМеню" id="100"/>
+												<ExtendedTooltip name="КомментарииИЗаметкиСтрокаПоискаРасширеннаяПодсказка" id="101"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КомментарииИЗаметкиСостояниеПросмотра" id="102">
+												<AdditionSource>
+													<Item>КомментарииИЗаметки</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КомментарииИЗаметкиСостояниеПросмотраКонтекстноеМеню" id="103"/>
+												<ExtendedTooltip name="КомментарииИЗаметкиСостояниеПросмотраРасширеннаяПодсказка" id="104"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КомментарииИЗаметкиУправлениеПоиском" id="105">
+												<AdditionSource>
+													<Item>КомментарииИЗаметки</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КомментарииИЗаметкиУправлениеПоискомКонтекстноеМеню" id="106"/>
+												<ExtendedTooltip name="КомментарииИЗаметкиУправлениеПоискомРасширеннаяПодсказка" id="107"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="КомментарииИЗаметкиНомерСтроки" id="108">
+													<DataPath>Объект.КомментарииИЗаметки.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КомментарииИЗаметкиНомерСтрокиКонтекстноеМеню" id="109"/>
+													<ExtendedTooltip name="КомментарииИЗаметкиНомерСтрокиРасширеннаяПодсказка" id="110"/>
+												</LabelField>
+												<InputField name="КомментарииИЗаметкиИдентификатор" id="111">
+													<DataPath>Объект.КомментарииИЗаметки.Идентификатор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="КомментарииИЗаметкиИдентификаторКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="КомментарииИЗаметкиИдентификаторРасширеннаяПодсказка" id="113"/>
+												</InputField>
+												<InputField name="КомментарииИЗаметкиКомментарий" id="114">
+													<DataPath>Объект.КомментарииИЗаметки.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<MultiLine>true</MultiLine>
+													<ContextMenu name="КомментарииИЗаметкиКомментарийКонтекстноеМеню" id="115"/>
+													<ExtendedTooltip name="КомментарииИЗаметкиКомментарийРасширеннаяПодсказка" id="116"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.МаршрутыДоставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Медиаматериалы">
+					<Column name="КартинкаСтроки" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Картинка строки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>v8ui:Picture</v8:Type>
+						</Type>
+					</Column>
+					<Column name="АдресВременногоХранилища" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Адрес временного хранилища</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="РасширениеФайла" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Расширение файла</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="ЭтоСуществующийРанее" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Это существующий ранее</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+				<AdditionalColumns table="Объект.КоординатыПеремещения">
+					<Column name="МаркерУдалён" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Маркер удалён</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТекстHTML" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыМедиаМатериалов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы медиа материалов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТекМестоположениеТаблицаИдентификатор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тек местоположение таблица идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаТекАдресаКлиента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица тек адреса клиента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ТекАдресаКлиентов" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тек адреса клиентов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресаДоставкиКлиент" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адреса доставки клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="АдресДоставки" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес доставки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>1000</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Регион" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регион</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Район" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Район</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаселенныйПункт" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Населенный пункт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Улица" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Улица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Дом" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дом</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>256</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Индекс" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индекс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Широта" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Широта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>32</v8:Digits>
+							<v8:FractionDigits>16</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="АдресныйОбъект" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адресный объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.АдресныеОбъекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Долгота" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Долгота</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>32</v8:Digits>
+							<v8:FractionDigits>16</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="АдресВрем" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияИдентификатор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КомментарииИЗаметкиИдентификатор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>МедиаматериалыИдентификатор</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентРегион</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентРайон</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентНаселенныйПункт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентУлица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентДом</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентИндекс</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентШирота</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиКлиентДолгота</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияМаркерУдалён</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Ссылка</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Ссылка</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияАдрес</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияДатаВремя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияШирота</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияДолгота</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КоординатыПеремещенияНомерСтроки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.КоординатыПеремещения.МаркерУдалён</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#D4D4D4</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьШиротуИДолготу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать/скрыть широту и долготу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать широту и долготу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьШиротуИДолготу</Action>
+		</Command>
+		<Command name="ПроложитьМаршрут" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проложить маршрут</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проложить маршрут</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроложитьМаршрут</Action>
+		</Command>
+		<Command name="ВыбратьИзДоступныхАдресовКлиента" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать из доступных адресов клиента</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать из доступных адресов клиента</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьИзДоступныхАдресовКлиента</Action>
+		</Command>
+	</Commands>
+</Form>

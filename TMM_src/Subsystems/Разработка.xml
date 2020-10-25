@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<Subsystem uuid="706de90d-5ffc-4828-91bf-64e23f4535ee">
+		<Properties>
+			<Name>Разработка</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разработка</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НавигацияМаршрутыДоставки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НавигацияАнкетированиеИОпросы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НавигацияЗаказТоваровИУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОсновноеОкно</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаПроверкиКарты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Сотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПочтовыеОтделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Партнёры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Клиенты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДополнительныеУсловияПродажи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗаказТоваровИУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ДополнительныеУсловияПродаж</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ФормаВводаАдреса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.АнкетыИОпросы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроведениеАнкетированияОпросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МаршрутыДоставки</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

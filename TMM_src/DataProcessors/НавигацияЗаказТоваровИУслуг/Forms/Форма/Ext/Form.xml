@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="4">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияЛоготипПочтыРоссии" id="1">
+					<Width>8</Width>
+					<MaxWidth>14</MaxWidth>
+					<Height>1</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация логотип почты россии</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.ЛоготипПочтаРоссии</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияЛоготипПочтыРоссииКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ДекорацияЛоготипПочтыРоссииРасширеннаяПодсказка" id="3"/>
+				</PictureDecoration>
+				<Button name="КаталогТоваровИУслуг" id="6">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.КаталогТоваровИУслуг</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог
+товаров
+и услуг</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="КаталогТоваровИУслугРасширеннаяПодсказка" id="7"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="8">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="9"/>
+			<ChildItems>
+				<Button name="ОформитьЗаказИлиПодписку" id="10">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОформитьЗаказИлиПодписку</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Оформить
+заказ
+или подписку</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОформитьЗаказИлиПодпискуРасширеннаяПодсказка" id="11"/>
+				</Button>
+				<Button name="ОтчётыПоЗаказамИПодпискам" id="12">
+					<Type>UsualButton</Type>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<CommandName>Form.Command.ОтчётыПоЗаказамИПодпискам</CommandName>
+					<TextColor>#0068B1</TextColor>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчёты
+по заказам
+и подпискам</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ОтчётыПоЗаказамИПодпискамРасширеннаяПодсказка" id="13"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НавигацияЗаказТоваровИУслуг</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КаталогТоваровИУслуг" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог товаров и услуг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог товаров и услуг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КаталогТоваровИУслуг</Action>
+		</Command>
+		<Command name="ОформитьЗаказИлиПодписку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить заказ или подписку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить заказ или подписку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОформитьЗаказИлиПодписку</Action>
+		</Command>
+		<Command name="ОтчётыПоЗаказамИПодпискам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по заказам и подпискам</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по заказам и подпискам</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчётыПоЗаказамИПодпискам</Action>
+		</Command>
+	</Commands>
+</Form>

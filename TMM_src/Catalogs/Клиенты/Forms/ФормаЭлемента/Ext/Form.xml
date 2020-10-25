@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<Visible>false</Visible>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Фамилия" id="7">
+			<DataPath>Объект.Фамилия</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ФамилияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ФамилияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Имя" id="10">
+			<DataPath>Объект.Имя</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИмяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИмяРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Отчество" id="13">
+			<DataPath>Объект.Отчество</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтчествоКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Телефон" id="16">
+			<DataPath>Объект.Телефон</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="АдресаДоставки" id="19">
+			<Representation>List</Representation>
+			<TitleLocation>Top</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.АдресаДоставки</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="АдресаДоставкиКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="АдресаДоставкиКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="АдресаДоставкиРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="АдресаДоставкиСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>АдресаДоставки</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АдресаДоставкиСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="АдресаДоставкиСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="АдресаДоставкиСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>АдресаДоставки</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="АдресаДоставкиСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="АдресаДоставкиСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="АдресаДоставкиУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>АдресаДоставки</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="АдресаДоставкиУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="АдресаДоставкиУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="АдресаДоставкиНомерСтроки" id="32">
+					<DataPath>Объект.АдресаДоставки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="АдресаДоставкиНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="АдресаДоставкиАдресДоставки" id="35">
+					<DataPath>Объект.АдресаДоставки.АдресДоставки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceButton>true</ChoiceButton>
+					<QuickChoice>false</QuickChoice>
+					<TextEdit>false</TextEdit>
+					<ContextMenu name="АдресаДоставкиАдресДоставкиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="АдресаДоставкиАдресДоставкиРасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="StartChoice">АдресаДоставкиАдресДоставкиНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="АдресаДоставкиРегион" id="38">
+					<DataPath>Объект.АдресаДоставки.Регион</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиРегионКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="АдресаДоставкиРегионРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="АдресаДоставкиРайон" id="41">
+					<DataPath>Объект.АдресаДоставки.Район</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиРайонКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="АдресаДоставкиРайонРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="АдресаДоставкиНаселенныйПункт" id="44">
+					<DataPath>Объект.АдресаДоставки.НаселенныйПункт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиНаселенныйПунктКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="АдресаДоставкиНаселенныйПунктРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="АдресаДоставкиУлица" id="47">
+					<DataPath>Объект.АдресаДоставки.Улица</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиУлицаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="АдресаДоставкиУлицаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="АдресаДоставкиДом" id="50">
+					<DataPath>Объект.АдресаДоставки.Дом</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиДомКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="АдресаДоставкиДомРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="АдресаДоставкиИндекс" id="53">
+					<DataPath>Объект.АдресаДоставки.Индекс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиИндексКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="АдресаДоставкиИндексРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="АдресаДоставкиШирота" id="56">
+					<DataPath>Объект.АдресаДоставки.Широта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиШиротаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="АдресаДоставкиШиротаРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="АдресаДоставкиДолгота" id="59">
+					<DataPath>Объект.АдресаДоставки.Долгота</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиДолготаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="АдресаДоставкиДолготаРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="АдресаДоставкиАдресныйОбъект" id="62">
+					<DataPath>Объект.АдресаДоставки.АдресныйОбъект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АдресаДоставкиАдресныйОбъектКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="АдресаДоставкиАдресныйОбъектРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиРегион</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиРайон</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиНаселенныйПункт</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиУлица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиДом</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиИндекс</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиШирота</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>АдресаДоставкиДолгота</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>OrGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Ссылка</dcsset:left>
+							<dcsset:comparisonType>Filled</dcsset:comparisonType>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Ссылка</dcsset:left>
+							<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+</Form>

@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalSpacing>Double</VerticalSpacing>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="5">
+					<Width>14</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="6"/>
+					<ChildItems>
+						<Button name="ДоставкаОтправленийПолучателям" id="7">
+							<Type>UsualButton</Type>
+							<TitleHeight>3</TitleHeight>
+							<Representation>Text</Representation>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ДоставкаОтправленийПолучателям</CommandName>
+							<TextColor>#1254B2</TextColor>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="97"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Доставка отправлений
+получателям</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ДоставкаОтправленийПолучателямРасширеннаяПодсказка" id="8"/>
+						</Button>
+						<PictureDecoration name="Декорация1" id="13">
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.ДоставкаОтправлений</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="Click">Декорация1Нажатие</Event>
+							</Events>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="9">
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<VerticalSpacing>Double</VerticalSpacing>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Button name="ВнестиИзмененияВПрошлыеМаршрутыДоставки" id="11">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ВнестиИзмененияВПрошлыеМаршрутыДоставки</CommandName>
+							<TextColor>#1254B2</TextColor>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="97"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Посмотреть
+или изменить 
+прошлые маршруты 
+доставки</v8:content>
+								</v8:item>
+							</Title>
+							<PictureLocation>Right</PictureLocation>
+							<ExtendedTooltip name="ВнестиИзмененияВПрошлыеМаршрутыДоставкиРасширеннаяПодсказка" id="12"/>
+						</Button>
+						<PictureDecoration name="Декорация2" id="16">
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.ВнестиИзмененияВМаршруты</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="Click">Декорация2Нажатие</Event>
+							</Events>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="3">
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<VerticalAlign>Bottom</VerticalAlign>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<UsualGroup name="Группа5" id="19">
+					<Width>14</Width>
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="20"/>
+					<ChildItems>
+						<Button name="НарисоватьМаршрутДоставки" id="21">
+							<Type>UsualButton</Type>
+							<TitleHeight>3</TitleHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.НарисоватьМаршрутДоставки</CommandName>
+							<TextColor>#124AB2</TextColor>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="97"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Нарисовать маршрут
+доставки</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="НарисоватьМаршрутДоставкиРасширеннаяПодсказка" id="22"/>
+						</Button>
+						<PictureDecoration name="Декорация3" id="27">
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.НарисоватьМаршрут</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="29"/>
+							<Events>
+								<Event name="Click">Декорация3Нажатие</Event>
+							</Events>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="23">
+					<HorizontalStretch>true</HorizontalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<VerticalAlign>Bottom</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<Button name="ОтчётыПоДоставке" id="25">
+							<Type>UsualButton</Type>
+							<TitleHeight>3</TitleHeight>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<CommandName>Form.Command.ОтчётыПоДоставке</CommandName>
+							<TextColor>#124AB2</TextColor>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="97"/>
+							<ExtendedTooltip name="ОтчётыПоДоставкеРасширеннаяПодсказка" id="26"/>
+						</Button>
+						<PictureDecoration name="Декорация4" id="30">
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Top</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.ОтчетыПоДоставке</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="Декорация4КонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="32"/>
+							<Events>
+								<Event name="Click">Декорация4Нажатие</Event>
+							</Events>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.НавигацияМаршрутыДоставки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДоставкаОтправленийПолучателям" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доставка отправлений получателям</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отслеживание маршрута доставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДоставкаОтправленийПолучателям</Action>
+		</Command>
+		<Command name="НарисоватьМаршрутДоставки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нарисовать маршрут доставки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нарисовать маршрут доставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НарисоватьМаршрутДоставки</Action>
+		</Command>
+		<Command name="ВнестиИзмененияВПрошлыеМаршрутыДоставки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внести изменения в прошлые маршруты доставки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внести изменения в прошлые маршруты доставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВнестиИзмененияВПрошлыеМаршрутыДоставки</Action>
+		</Command>
+		<Command name="ОтчётыПоДоставке" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по доставке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчёты по доставке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчётыПоДоставке</Action>
+		</Command>
+	</Commands>
+</Form>

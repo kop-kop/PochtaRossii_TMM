@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="4">
+			<Height>7</Height>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="14">
+			<Height>4</Height>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация2" id="34">
+					<Width>16</Width>
+					<Height>2</Height>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<PictureSize>Proportionally</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.ЛоготипПочтаРоссии</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация2КонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="36"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="19">
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="37">
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьЗаголовок" id="39">
+							<Font ref="style:NormalTextFont" faceName="Calibri Light" height="14" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Хорошего вам дня, </v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<VerticalAlign>Center</VerticalAlign>
+							<ContextMenu name="НадписьЗаголовокКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="НадписьЗаголовокРасширеннаяПодсказка" id="41"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="21">
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<UsualGroup name="Группа7" id="44">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<Button name="МаршрутыДоставки" id="46">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<MaxWidth>8</MaxWidth>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>3</MaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.МаршрутыДоставки</CommandName>
+									<TextColor>#0067B0</TextColor>
+									<Picture>
+										<xr:Ref>CommonPicture.МаршрутыДоставки</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<PictureLocation>Left</PictureLocation>
+									<ExtendedTooltip name="МаршрутыДоставкиРасширеннаяПодсказка" id="47"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа8" id="48">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<Button name="АнкетированиеИОпросы" id="50">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>3</MaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.АнкетированиеИОпросы</CommandName>
+									<TextColor>#0068B1</TextColor>
+									<Picture>
+										<xr:Ref>CommonPicture.АнкетированиеИОпросы</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="АнкетированиеИОпросыРасширеннаяПодсказка" id="51"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа9" id="52">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<Button name="ЗаказыТоваровИУслуг" id="54">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>3</MaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<CommandName>Form.Command.ЗаказыТоваровИУслуг</CommandName>
+									<TextColor>#0068B1</TextColor>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗаказыТоваровИУслуг</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ЗаказыТоваровИУслугРасширеннаяПодсказка" id="55"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="23">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="24"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОсновноеОкно</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="МаршрутыДоставки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маршруты доставки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маршруты доставки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>МаршрутыДоставки</Action>
+		</Command>
+		<Command name="АнкетированиеИОпросы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анкетирование и опросы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Анкетирование и опросы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>АнкетированиеИОпросы</Action>
+		</Command>
+		<Command name="ЗаказыТоваровИУслуг" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы товаров и услуг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказы товаров и услуг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаказыТоваровИУслуг</Action>
+		</Command>
+	</Commands>
+</Form>
